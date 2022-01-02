@@ -25,21 +25,35 @@ button {
    border: none;
    border-radius: 5px;
 }
+
+i {
+  color: #CDF2CA;
+   
+   
+   
+
+}
  
 #header {
   
   display: flex;
   justify-content: space-between;
   position: fixed;
-  left: 0;
-   
-   
+  left: 0; 
   right: 0;
-  
+  background-color: #fff;
   
   
   
    
+}
+@media (max-width: 555px)
+{
+  #nav-link {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+  }
 }
 #nav-bar {
   font-size: 1.5rem;
@@ -59,8 +73,78 @@ button {
   
   
 }
-.nav-link {
-   margin-right: 5rem;
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 10%;
+ 
    
 }
+#video {
+  text-align: center;
+  padding: 3.5rem;
+}
+.feature-text p {
+   font-size: 1rem;
+   width: 80%;
+   
+}
+.icon {
+   margin-right:  4rem;
+}
+.nav-link {
+   margin-right: 4rem;
+   text-decoration: none;
+  color: #BCCC9A;
+   
+}
+
+.nav-link:hover {
+   
+  color: #9CC094;
+   
+}
+#pricing {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.card {
+  
+   width: 280px;
+   height: 380px;
+  background-color: #F9F3DF;
+  border-radius: 0.5rem;
+   
+     
+  margin-left: 3rem;
+  text-align: center;
+}
+
+.card-header {
+  background-color: #BCCC9A;
+  border-radius: 1rem;
+  height: 40px;
+  width: 280px;
+}
+h3 {
+   background-color: #BCCC9A;
+   font-size: 23px;
+  color: white;
+   
+   
+}
+.card button {
+  width: 200px;
+  font-size: 1.5rem;
+  background-color: #D8E9A8;
+  color: black;
+  color: white;
+ 
+}
+ 
+
+
  
