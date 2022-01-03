@@ -6,14 +6,20 @@ body {
 h1 {
   text-align: center;
   margin-top: 10%;
+  color: #000;
+  font-size: 2.5rem;
 }
-.myicon {
-  
+.myicon:hover {
+  color: #8B9A46;
    
 }
 input {
   align-self: center;
-  height: 1.5rem;
+  height: 2rem;
+  width: 15rem;
+  border: 1px solid #D3E4CD;
+  border-radius: 0.2rem;
+  
   
   
   
@@ -24,15 +30,19 @@ button {
    margin-top: 1.3rem;
    border: none;
    border-radius: 5px;
+  
+   width: 200px;
+  font-size: 1.5rem;
+ 
+  background-color: #CDF2CA;
+  color: #52734D;
 }
 
 i {
   color: #CDF2CA;
-   
-   
-   
 
 }
+
  
 #header {
   
@@ -41,7 +51,8 @@ i {
   position: fixed;
   left: 0; 
   right: 0;
-  background-color: #fff;
+  background-color: #A3DA8D;
+ 
   
   
   
@@ -53,6 +64,7 @@ i {
     display: flex;
     justify-content: center;
     position: fixed;
+    
   }
 }
 #nav-bar {
@@ -84,6 +96,7 @@ i {
 #video {
   text-align: center;
   padding: 3.5rem;
+  background-color: #A3DA8D;
 }
 .feature-text p {
    font-size: 1rem;
@@ -96,18 +109,20 @@ i {
 .nav-link {
    margin-right: 4rem;
    text-decoration: none;
-  color: #BCCC9A;
+   color: #000;
+  
    
 }
 
 .nav-link:hover {
    
-  color: #9CC094;
+  color: #F2FFE9;
    
 }
 #pricing {
   display: flex;
   justify-content: center;
+  padding: 5rem;
   
   
 }
@@ -117,10 +132,18 @@ i {
    height: 380px;
   background-color: #F9F3DF;
   border-radius: 0.5rem;
-   
-     
   margin-left: 3rem;
   text-align: center;
+}
+@media (max-width: 555px)
+{
+  .card {
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .card-header {
@@ -129,21 +152,59 @@ i {
   height: 40px;
   width: 280px;
 }
+ 
 h3 {
+  font-family: 'Roboto Mono', monospace;
    background-color: #BCCC9A;
-   font-size: 23px;
-  color: white;
+   font-size: 20px;
+   color: white;
    
    
 }
 .card button {
   width: 200px;
   font-size: 1.5rem;
-  background-color: #D8E9A8;
-  color: black;
-  color: white;
- 
+ font-family: 'Roboto Mono', monospace;
+  background-color: #CDF2CA;
+  color: #52734D;
+   
+  
 }
+button:hover {
+  background-color: #BCCC9A;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(163, 218, 141);
+  padding: 1rem;
+  
+  
+}
+@media (max-width: 555px)
+{
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.footer a {
+  font-size: 1.2rem;
+}
+
+.par {
+  color: rgba(69, 100, 69, 0.6);
+   
+  font-size: 120%;
+    
+}
+.par a:hover {
+  color: #000;
+}
+
+
  
 
 
